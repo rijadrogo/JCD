@@ -23,7 +23,7 @@ public class ZbirElemenataNiza {
         for (int i = 0; i < arrayLenght1; ++i)
             result[i] = array1[i] + array2[i];
 
-        System.out.println("Elementi rezultirajuceg niza s: ");
+        System.out.println("Elementi rezultirajuceg niza su: ");
         for (int i = 0; i < arrayLenght1; ++i)
             System.out.print(result[i] + " ");
     }
