@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71f38a8b-4000-46b2-aadf-366692009cc6" name="Default Changelist" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PredavanjeTri/TablicaMnozenja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjeTri/TablicaMnozenja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PredavanjeTri/Vjezba2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjeTri/Vjezba2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PredavanjeTri/Vjezba3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjeTri/Vjezba3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +14,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\User\IdeaProjects\JCD\.idea" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1TWfETF6NZWdplAp6f1TGh7ucRd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -62,11 +71,32 @@
       <option name="project" value="LOCAL" />
       <updated>1573580811396</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit">
+      <created>1573580986901</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573580986901</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="840" y="414" width="264" height="212" key="Github.ShareDialog" timestamp="1573581099052">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="840" y="414" width="264" height="212" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573581099052" />
+    <state x="540" y="262" key="IDE.errors.dialog" timestamp="1573581058674">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="262" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573581058674" />
+    <state x="786" y="146" key="RollbackChangesDialog" timestamp="1573581014586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="786" y="146" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573581014586" />
   </component>
 </project>

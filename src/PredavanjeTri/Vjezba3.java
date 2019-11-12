@@ -8,6 +8,7 @@ public class Vjezba3 {
         System.out.println("Unesite proizvodjaca automobila: ");
         String carMake = input.nextLine();
         System.out.println("Unesite broj vrata");
+
         int doors = input.nextInt();
         if (carMake.toLowerCase().equals("ford")) {
             System.out.println("Marka automobila je ford, ima " + doors + " vrata.");

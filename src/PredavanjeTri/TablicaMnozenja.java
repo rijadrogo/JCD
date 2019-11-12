@@ -10,6 +10,7 @@ public class TablicaMnozenja {
             for (int j = 1; j <= 3; ++j) {
                 System.out.printf("%-10d", i * j);
             }
+
             System.out.print("\n");
         }
     }

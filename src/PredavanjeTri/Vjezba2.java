@@ -6,8 +6,10 @@ public class Vjezba2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Unesite dva broja: ");
+
         int x = input.nextInt();
         int y = input.nextInt();
+
         int remainder = x % y;
         if (remainder == 0)
             System.out.println("Ostatak pri dijeljenju ne postoji");
