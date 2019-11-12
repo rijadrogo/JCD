@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71f38a8b-4000-46b2-aadf-366692009cc6" name="Default Changelist" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/src/PredavanjeCetiri/VjezbaStringovi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PredavanjeTri/TablicaMnozenja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjeTri/TablicaMnozenja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PredavanjeTri/Vjezba2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjeTri/Vjezba2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PredavanjeTri/Vjezba3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjeTri/Vjezba3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,7 +39,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/PredavanjeTri" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.VjezbaStringovi">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="JCD" />
@@ -45,6 +50,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VjezbaStringovi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PredavanjeCetiri.VjezbaStringovi" />
+      <module name="JCD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PredavanjeCetiri.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.VjezbaStringovi" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.VjezbaStringovi" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -78,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573580986901</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit">
+      <created>1573581147277</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573581147277</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -90,6 +124,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="840" y="414" width="264" height="212" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573581099052" />
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1573581583989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1573581583989" />
+    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1573581583989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1573581583989" />
+    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1573581583989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1573581583989" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1573581583989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1573581583989" />
     <state x="540" y="262" key="IDE.errors.dialog" timestamp="1573581058674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -98,5 +148,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="786" y="146" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573581014586" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1573581156523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1573581156523" />
   </component>
 </project>
