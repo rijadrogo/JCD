@@ -15,10 +15,10 @@ public class CountSubstring {
         OuterLoopLabel:
         for (int i = 0; i <= max; ++i) {
             int k = i;
-            for (int j = 0; j < rijec.length() && k <= max; ++j, ++k) {
+            for (int j = 0; j < rijec.length() && k <= max; ++j, ++k)
                 if (recenica.charAt(k) != rijec.charAt(j))
                     continue OuterLoopLabel;
-            }
+
             ++counter;
             i = k - 1;
         }
