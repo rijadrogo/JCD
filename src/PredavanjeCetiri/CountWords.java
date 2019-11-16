@@ -10,7 +10,7 @@ public class CountWords {
             JOptionPane.showMessageDialog(null, "Niste unijeli rijec.");
             return;
         }
-        
+
         for (char e : rijec.toCharArray())
             if (e == ' ') {
                 JOptionPane.showMessageDialog(null, "Niste unijeli rijec.");
@@ -39,7 +39,7 @@ public class CountWords {
         }
 
         if (counter != 0)
-            JOptionPane.showMessageDialog(null, "Rijec se nalazi " + counter + " puta u stringu.");
+            JOptionPane.showMessageDialog(null, "Rijec se ponavlja " + counter + " puta u stringu.");
         else
             JOptionPane.showMessageDialog(null, "Rijec se ne nalazi u stringu.");
     }

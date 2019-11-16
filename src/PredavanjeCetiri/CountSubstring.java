@@ -23,7 +23,7 @@ public class CountSubstring {
             i = k - 1;
         }
         if (counter != 0)
-            JOptionPane.showMessageDialog(null, "Rijec se nalazi " + counter + " puta u stringu.");
+            JOptionPane.showMessageDialog(null, "Rijec se ponavlja " + counter + " puta u stringu.");
         else
             JOptionPane.showMessageDialog(null, "Rijec se ne nalazi u stringu.");
     }
