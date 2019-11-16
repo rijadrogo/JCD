@@ -10,12 +10,12 @@ public class CountWords {
             JOptionPane.showMessageDialog(null, "Niste unijeli rijec.");
             return;
         }
-        for (int i = 0; i < rijec.length(); i++)
-            if (rijec.charAt(i) == ' ') {
+        for (char e : rijec.toCharArray())
+            if (e == ' ') {
                 JOptionPane.showMessageDialog(null, "Niste unijeli rijec.");
                 return;
             }
-
+        
         int max = recenica.length() - rijec.length();
         int counter = 0;
         OuterLoopLabel:
