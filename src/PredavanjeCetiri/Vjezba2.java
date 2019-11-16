@@ -16,7 +16,6 @@ public class Vjezba2 {
                     System.out.print("X");
                 else
                     System.out.print("O");
-
             }
             System.out.println();
         }
