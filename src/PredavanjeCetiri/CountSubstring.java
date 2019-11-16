@@ -7,7 +7,7 @@ public class CountSubstring {
         String recenica = JOptionPane.showInputDialog("Unesite recenicu: ");
         String rijec = JOptionPane.showInputDialog("Unesite rijec:");
         if (rijec.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Niste unijeli rijec");
+            JOptionPane.showMessageDialog(null, "Niste unijeli rijec.");
             return;
         }
         int max = recenica.length() - rijec.length();
