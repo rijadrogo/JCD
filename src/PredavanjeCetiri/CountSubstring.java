@@ -13,7 +13,7 @@ public class CountSubstring {
         int max = recenica.length() - rijec.length();
         int counter = 0;
         OuterLoopLabel:
-        for (int i = 0; i <= max; i++) {
+        for (int i = 0; i <= max; ++i) {
             int k = i;
             for (int j = 0; j < rijec.length() && k <= max; ++j, ++k) {
                 if (recenica.charAt(k) != rijec.charAt(j))

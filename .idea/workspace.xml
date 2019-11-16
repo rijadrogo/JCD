@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71f38a8b-4000-46b2-aadf-366692009cc6" name="Default Changelist" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/src/PredavanjeCetiri/CountSubstring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JCD/PredavanjeCetiri/SabiranjeMatrica.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JCD/PredavanjeCetiri/SabiranjeMatrica.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JCD/PredavanjeCetiri/Vjezba2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JCD/PredavanjeCetiri/Vjezba2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PredavanjeCetiri/Vjezba2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjeCetiri/Vjezba2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PredavanjeCetiri/ContainsSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjeCetiri/ContainsSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PredavanjeCetiri/CountSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjeCetiri/CountSubstring.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,22 +258,58 @@
       <option name="project" value="LOCAL" />
       <updated>1573892038072</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Commit">
+      <created>1573892230083</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573892230083</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Commit">
+      <created>1573892255043</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1573892255043</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Commit">
+      <created>1573892277749</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1573892277749</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Commit">
+      <created>1573892522400</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1573892522400</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Commit">
+      <created>1573898912301</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1573898912301</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1573584430694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573584430694" />
-    <state x="612" y="27" key="CommitChangelistDialog2" timestamp="1573892228344">
+    <state x="612" y="27" key="CommitChangelistDialog2" timestamp="1573898910853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="612" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1573892228344" />
+    <state x="612" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1573898910853" />
     <state x="840" y="414" width="264" height="212" key="Github.ShareDialog" timestamp="1573581099052">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -304,10 +338,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="786" y="146" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573581014586" />
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1573892238478">
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1573898920990">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1573892238478" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1573898920990" />
     <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1573891013968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
