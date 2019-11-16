@@ -24,10 +24,10 @@ public class CountWords {
                 ++i;
 
             if (i - pocetakRijeci == rijec.length()) {
-                for (int j = 0; j < rijec.length(); ++j) {
+                for (int j = 0; j < rijec.length(); ++j)
                     if (recenica.charAt(pocetakRijeci++) != rijec.charAt(j))
                         continue OuterLoopLabel;
-                }
+
                 ++counter;
             }
         }
