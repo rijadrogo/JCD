@@ -16,6 +16,7 @@ public class Square extends Shape {
         return 4 * stranica;
     }
 
+    @Override
     public void Info() {
         InternalInfo();
         System.out.println(" Stranica kvadrata je " + stranica + ".");

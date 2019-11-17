@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71f38a8b-4000-46b2-aadf-366692009cc6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/PredavanjePet/Likovi/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjePet/Likovi/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JCD/PredavanjePet/Likovi/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JCD/PredavanjePet/Likovi/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JCD/PredavanjePet/Likovi/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JCD/PredavanjePet/Likovi/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JCD/PredavanjePet/Likovi/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JCD/PredavanjePet/Likovi/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JCD/PredavanjePet/Likovi/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JCD/PredavanjePet/Likovi/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JCD/PredavanjePet/Likovi/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JCD/PredavanjePet/Likovi/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PredavanjePet/Likovi/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjePet/Likovi/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PredavanjePet/Likovi/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjePet/Likovi/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PredavanjePet/Likovi/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjePet/Likovi/Square.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -420,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573983439767</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Commit">
+      <created>1573983482616</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1573983482616</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -437,10 +452,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573584430694" />
-    <state x="612" y="27" key="CommitChangelistDialog2" timestamp="1573983438476">
+    <state x="612" y="27" key="CommitChangelistDialog2" timestamp="1573983481621">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="612" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1573983438476" />
+    <state x="612" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1573983481621" />
     <state x="840" y="414" width="264" height="212" key="Github.ShareDialog" timestamp="1573581099052">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -469,10 +484,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="786" y="146" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573581014586" />
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1573983448292">
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1573983483871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1573983448292" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1573983483871" />
     <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1573982738136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

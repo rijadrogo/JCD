@@ -18,6 +18,7 @@ public class Rectangle extends Shape {
         return 2 * w + 2 * h;
     }
 
+    @Override
     public void Info() {
         InternalInfo();
         System.out.println(" Stranice pravouganika su " + w + " i " + h + ".");
