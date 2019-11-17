@@ -8,11 +8,11 @@ public class Square extends Shape {
         this.stranica = stranica;
     }
 
-    public double Povrsina() {
+    public final double Povrsina() {
         return stranica * stranica;
     }
 
-    public double Obim() {
+    public final double Obim() {
         return 4 * stranica;
     }
 

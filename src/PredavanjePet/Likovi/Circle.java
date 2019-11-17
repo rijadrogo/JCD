@@ -10,11 +10,11 @@ public class Circle extends Shape {
         this.poluprecnik = poluprecnik;
     }
 
-    public double Povrsina() {
+    public final double Povrsina() {
         return poluprecnik * poluprecnik * Pi;
     }
 
-    public double Obim() {
+    public final double Obim() {
         return 2 * poluprecnik * Pi;
     }
 

@@ -10,11 +10,11 @@ public class Rectangle extends Shape {
         h = height;
     }
 
-    public double Povrsina() {
+    public final double Povrsina() {
         return w * h;
     }
 
-    public double Obim() {
+    public final double Obim() {
         return 2 * w + 2 * h;
     }
 
