@@ -1,7 +1,5 @@
 package PredavanjePet;
 
-import javax.xml.transform.sax.SAXSource;
-
 public class Kalkulator {
     private double operand1;
     private double operand2;
