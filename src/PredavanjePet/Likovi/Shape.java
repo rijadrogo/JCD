@@ -17,4 +17,19 @@ public abstract class Shape {
 
     public abstract double Obim();
 
+    public String Boja() {
+        return boja;
+    }
+
+    public String Ime() {
+        return ime;
+    }
+
+    public double XKordinata() {
+        return x;
+    }
+
+    public double YKordinata() {
+        return y;
+    }
 }

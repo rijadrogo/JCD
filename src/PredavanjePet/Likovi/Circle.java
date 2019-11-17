@@ -17,5 +17,4 @@ public class Circle extends Shape {
     public double Obim() {
         return 2 * poluprecnik * Pi;
     }
-
 }
