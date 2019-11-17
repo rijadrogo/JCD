@@ -25,11 +25,11 @@ public abstract class Shape {
         return ime;
     }
 
-    public double XKordinata() {
+    public double XKoordinata() {
         return x;
     }
 
-    public double YKordinata() {
+    public double YKoordinata() {
         return y;
     }
 
