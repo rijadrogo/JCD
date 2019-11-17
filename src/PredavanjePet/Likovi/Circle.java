@@ -17,4 +17,9 @@ public class Circle extends Shape {
     public double Obim() {
         return 2 * poluprecnik * Pi;
     }
+
+    public void Info() {
+        InternalInfo();
+        System.out.println(" Poluprecnik kruga je " + poluprecnik + ".");
+    }
 }

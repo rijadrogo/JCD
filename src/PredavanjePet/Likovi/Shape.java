@@ -32,4 +32,14 @@ public abstract class Shape {
     public double YKordinata() {
         return y;
     }
+
+    protected void InternalInfo() {
+        System.out.print(ime + " je " + boja + " i nalazi se na poziciji '" + x + ", " + y + "'.");
+    }
+
+    public void Info() {
+        InternalInfo();
+        System.out.println();
+    }
+
 }

@@ -15,4 +15,9 @@ public class Square extends Shape {
     public double Obim() {
         return 4 * stranica;
     }
+
+    public void Info() {
+        InternalInfo();
+        System.out.println(" Stranica kvadrata je " + stranica + ".");
+    }
 }

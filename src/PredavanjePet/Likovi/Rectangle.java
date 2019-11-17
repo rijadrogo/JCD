@@ -17,4 +17,9 @@ public class Rectangle extends Shape {
     public double Obim() {
         return 2 * w + 2 * h;
     }
+
+    public void Info() {
+        InternalInfo();
+        System.out.println(" Stranice pravouganika su " + w + " i " + h + ".");
+    }
 }
