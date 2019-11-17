@@ -1,6 +1,9 @@
 package PredavanjeCetiri.TackaVjezba;
 
 public class Bounds {
+    /*
+        Point p je donja lijeva tacka
+     */
     public Point p;
     public double width;
     public double height;
