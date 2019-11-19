@@ -19,10 +19,10 @@ public class UI {
                     System.out.println("Unesite naslov knjige: ");
                     String title = input.nextLine();
                     System.out.println("Unesite autora knjige: ");
-                    String autor = input.nextLine();
+                    String author = input.nextLine();
                     System.out.println("Unesite isbn knjige: ");
                     int isbn = input.nextInt();
-                    l.addBook(new Book(title, autor, isbn));
+                    l.addBook(new Book(title, author, isbn));
                     break;
                 }
                 case 2:
@@ -32,19 +32,19 @@ public class UI {
                     System.out.println("Unesite naslov knjige: ");
                     String title = input.nextLine();
                     System.out.println("Unesite autora knjige: ");
-                    String autor = input.nextLine();
+                    String author = input.nextLine();
                     System.out.println("Unesite isbn knjige: ");
                     int isbn = input.nextInt();
-                    l.removeBook(new Book(title, autor, isbn));
+                    l.removeBook(new Book(title, author, isbn));
                 }
                 case 4: {
                     System.out.println("Unesite naslov knjige: ");
                     String title = input.nextLine();
                     System.out.println("Unesite autora knjige: ");
-                    String autor = input.nextLine();
+                    String author = input.nextLine();
                     System.out.println("Unesite isbn knjige: ");
                     int isbn = input.nextInt();
-                    l.showBookDetails(new Book(title, autor, isbn));
+                    l.showBookDetails(new Book(title, author, isbn));
                 }
                 case 5:
                     return;
