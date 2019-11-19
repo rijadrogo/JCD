@@ -4,7 +4,7 @@ public class Kalkulator {
     private double operand1;
     private double operand2;
 
-    Kalkulator(double x, double y) {
+    public Kalkulator(double x, double y) {
         operand1 = x;
         operand2 = y;
     }
