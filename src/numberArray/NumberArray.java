@@ -108,17 +108,17 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return currentSize == 0;
     }
 
-    public int lastIndexOf(T o) {
+    public int lastIndexOf(T number) {
         for (int i = currentSize - 1; i >= 0; --i) {
-            if (arrayNumber[i].equals(o)) {
+            if (arrayNumber[i].equals(number)) {
                 return i;
             }
         }
         return -1;
     }
 
-    public boolean contains(T o) {
-        return indexOf(o) != -1;
+    public boolean contains(T number) {
+        return indexOf(number) != -1;
     }
 
     public boolean retainAll(Collection<? extends T> c) {
@@ -132,9 +132,9 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return flag;
     }
 
-    public int indexOf(T o) {
+    public int indexOf(T number) {
         for (int i = 0; i < currentSize; ++i) {
-            if (arrayNumber[i].equals(o)) {
+            if (arrayNumber[i].equals(number)) {
                 return i;
             }
         }
