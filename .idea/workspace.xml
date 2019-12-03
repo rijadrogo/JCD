@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71f38a8b-4000-46b2-aadf-366692009cc6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JCD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JCD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/numberArray/NumberArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/numberArray/NumberArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,13 +152,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573580660831</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Commit">
-      <created>1573583328729</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1573583328729</updated>
     </task>
     <task id="LOCAL-00011" summary="Commit">
       <created>1573583345669</created>
@@ -495,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575404141003</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Commit">
+      <created>1575404883557</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1575404883557</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -516,10 +517,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575392238051" />
-    <state x="612" y="27" key="CommitChangelistDialog2" timestamp="1575404139935">
+    <state x="612" y="27" key="CommitChangelistDialog2" timestamp="1575404882540">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="612" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1575404139935" />
+    <state x="612" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1575404882540" />
     <state x="840" y="414" width="264" height="212" key="Github.ShareDialog" timestamp="1573581099052">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -548,18 +549,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="786" y="146" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573581014586" />
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1575404144182">
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1575404884740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575404144182" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575404884740" />
     <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575392524118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="636" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575392524118" />
-    <state x="664" y="408" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1575396328644">
+    <state x="664" y="408" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1575404926031">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="664" y="408" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1575396328644" />
+    <state x="664" y="408" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1575404926031" />
     <state x="767" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1573982766731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
