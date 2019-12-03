@@ -1,6 +1,8 @@
 package numberArray;
 
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
@@ -43,7 +45,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         ++currentSize;
     }
 
-    boolean addAll(int index, Collection<? extends T> c) {
+    public boolean addAll(int index, Collection<? extends T> c) {
         // ako nemam dovoljno prostora alociraj
         if (currentSize + c.size() > currentCapacity) {
             currentCapacity = currentSize + c.size();
@@ -70,11 +72,13 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return addAll(currentSize, c);
     }
 
-    public void remove(int index) {
+    public T remove(int index) {
+        T temp = arrayNumber[index];
         for (int i = index + 1; i < currentSize; ++i) {
             arrayNumber[i - 1] = arrayNumber[i];
         }
         --currentSize;
+        return temp;
     }
 
     public boolean remove(T number) {
@@ -99,15 +103,15 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         arrayNumber[index] = number;
     }
 
-    T get(int index) {
+    public T get(int index) {
         return arrayNumber[index];
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return currentSize == 0;
     }
 
-    int lastIndexOf(T o) {
+    public int lastIndexOf(T o) {
         for (int i = currentSize - 1; i >= 0; --i) {
             if (arrayNumber[i].equals(o)) {
                 return i;
@@ -116,11 +120,11 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return -1;
     }
 
-    boolean contains(T o) {
+    public boolean contains(T o) {
         return indexOf(o) != -1;
     }
 
-    boolean retainAll(Collection<? extends T> c) {
+    public boolean retainAll(Collection<? extends T> c) {
         boolean flag = false;
         for (int i = 0; i < currentSize; ++i) {
             if (!c.contains(arrayNumber[i])) {
@@ -131,7 +135,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return flag;
     }
 
-    int indexOf(T o) {
+    public int indexOf(T o) {
         for (int i = 0; i < currentSize; ++i) {
             if (arrayNumber[i].equals(o)) {
                 return i;
@@ -146,17 +150,18 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         }
     }
 
-    boolean removeAll(Collection<? extends T> c) {
+    public boolean removeAll(Collection<? extends T> c) {
         for (T t : c) {
             remove(t);
         }
         return true;
     }
 
-    int size() {
+    public int size() {
         return currentSize;
     }
 
+    @NotNull
     @Override
     public Iterator<T> iterator() {
         return new Iter();
@@ -178,4 +183,15 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         }
     }
 
+    // public void clear();
+    // public void ensureCapacity(int requiredCapacity);
+    // public Object[] toArray()
+    // public <T> T[] toArray(T[] a)
+    // public Object clone();
+    // public boolean removeIf(Predicate<? super T> filter);
+    // public void replaceAll(UnaryOperator<T> operator);
+    // public void sort(Comparator<? super T> c);
+    // public Spliterator<T> spliterator();
+    // public NumberArray<T> subList(int fromIndex, int toIndex)
+    // public void trimToSize()
 }
