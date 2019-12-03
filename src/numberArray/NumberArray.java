@@ -1,8 +1,5 @@
 package numberArray;
 
-
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
@@ -161,7 +158,6 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return currentSize;
     }
 
-    @NotNull
     @Override
     public Iterator<T> iterator() {
         return new Iter();
