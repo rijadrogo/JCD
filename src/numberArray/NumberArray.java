@@ -28,11 +28,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public boolean add(T number) {
-        // ako nemam dovoljan broj elemenata povecaj duzinu
-        resizeIfNecessary();
-        // ima dovoljan broj samo dodaj na kraj
-        arrayNumber[currentSize] = number;
-        ++currentSize;
+        add(currentSize, number);
         return true;
     }
 
@@ -71,6 +67,10 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return true;
     }
 
+    boolean addAll(Collection<? extends T> c) {
+        return addAll(currentSize, c);
+    }
+
     public void remove(int index) {
         for (int i = index + 1; i < currentSize; ++i) {
             arrayNumber[i - 1] = arrayNumber[i];
@@ -79,11 +79,12 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public void remove(T number) {
-        for (int i = 0; i < currentSize; ++i) {
-            if (arrayNumber[i].equals(number)) {
-                remove(i);
-                --i;
+        while (true) {
+            int i = indexOf(number);
+            if (i == -1) {
+                break;
             }
+            remove(i);
         }
     }
 
@@ -113,12 +114,18 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     boolean contains(T o) {
-        for (T elem : arrayNumber) {
-            if (elem.equals(o)) {
-                return true;
+        return indexOf(o) != -1;
+    }
+
+    boolean retainAll(Collection<? extends T> c) {
+        boolean flag = false;
+        for (int i = 0; i < currentSize; ++i) {
+            if (!c.contains(arrayNumber[i])) {
+                remove(i);
+                flag = true;
             }
         }
-        return false;
+        return flag;
     }
 
     int indexOf(T o) {
