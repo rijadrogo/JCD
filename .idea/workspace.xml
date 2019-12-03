@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71f38a8b-4000-46b2-aadf-366692009cc6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/numberArray/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/numberArray/NumberArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PredavanjePet/Likovi/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PredavanjePet/Likovi/Circle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +40,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/PredavanjeTri" />
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PredavanjeSest.Vjezba1Parse.Main" />
       <module name="JCD" />
@@ -69,12 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortiranjeKorisnika" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PredavanjeCetiri.SortiranjeKorisnika" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="numberArray.Main" />
       <module name="JCD" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PredavanjeCetiri.*" />
+          <option name="PATTERN" value="numberArray.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PredavanjeCetiri.Biblioteka.UI" />
+    <configuration name="SortiranjeKorisnika" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PredavanjeCetiri.SortiranjeKorisnika" />
       <module name="JCD" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PredavanjeCetiri.Biblioteka.*" />
+          <option name="PATTERN" value="PredavanjeCetiri.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,16 +117,16 @@
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.SortiranjeKorisnika" />
-      <item itemvalue="Application.UI" />
       <item itemvalue="Application.ZimZamZum" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.SortiranjeKorisnika" />
         <item itemvalue="Application.ZimZamZum" />
-        <item itemvalue="Application.UI" />
       </list>
     </recent_temporary>
   </component>
@@ -147,13 +152,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573580660831</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Commit">
-      <created>1573581147277</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1573581147277</updated>
     </task>
     <task id="LOCAL-00004" summary="Commit">
       <created>1573581613124</created>
@@ -491,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574532691992</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Commit">
+      <created>1574584861946</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1574584861946</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -504,10 +509,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573899488158" />
-    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1574186683962">
+    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575392238051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1574186683962" />
+    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575392238051" />
     <state x="612" y="27" key="CommitChangelistDialog2" timestamp="1574584856616">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -516,22 +521,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="840" y="414" width="264" height="212" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573581099052" />
-    <state width="1899" height="261" key="GridCell.Tab.0.bottom" timestamp="1574535030482">
+    <state width="1899" height="261" key="GridCell.Tab.0.bottom" timestamp="1575399542912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1574535030482" />
-    <state width="1899" height="261" key="GridCell.Tab.0.center" timestamp="1574535030482">
+    <state width="1899" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575399542912" />
+    <state width="1899" height="261" key="GridCell.Tab.0.center" timestamp="1575399542912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1574535030482" />
-    <state width="1899" height="261" key="GridCell.Tab.0.left" timestamp="1574535030482">
+    <state width="1899" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575399542912" />
+    <state width="1899" height="261" key="GridCell.Tab.0.left" timestamp="1575399542912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1574535030482" />
-    <state width="1899" height="261" key="GridCell.Tab.0.right" timestamp="1574535030482">
+    <state width="1899" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575399542912" />
+    <state width="1899" height="261" key="GridCell.Tab.0.right" timestamp="1575399542912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1574535030482" />
+    <state width="1899" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575399542912" />
     <state x="540" y="262" key="IDE.errors.dialog" timestamp="1574533328647">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -540,14 +545,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="786" y="146" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573581014586" />
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1574532760642">
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1575399944387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1574532760642" />
-    <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1574584802700">
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575399944387" />
+    <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575392524118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1574584802700" />
+    <state x="636" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575392524118" />
+    <state x="664" y="408" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1575396328644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="408" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1575396328644" />
     <state x="767" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1573982766731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
