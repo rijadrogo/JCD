@@ -1,9 +1,9 @@
 package numberArray;
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Iterator;
+
 
 public class NumberArray<T extends Number> {
     private T[] arrayNumber;
@@ -137,6 +137,10 @@ public class NumberArray<T extends Number> {
 
     int size() {
         return currentSize;
+    }
+
+    private class Iterator {
+
     }
 
 }
