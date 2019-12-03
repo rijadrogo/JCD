@@ -1,5 +1,6 @@
 package numberArray;
 
+import java.sql.Array;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
@@ -159,6 +160,19 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return new Iter();
     }
 
+    public void ensureCapacity(int requiredCapacity) {
+        arrayNumber = Arrays.copyOf(arrayNumber, requiredCapacity);
+        currentCapacity = requiredCapacity;
+        if (requiredCapacity < currentSize) {
+            currentSize = currentCapacity;
+        }
+    }
+
+    public void trimToSize() {
+        arrayNumber = Arrays.copyOf(arrayNumber, currentSize);
+        currentCapacity = currentSize;
+    }
+
     private class Iter implements Iterator<T> {
         private int current = 0;
 
@@ -188,5 +202,5 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     // public void sort(Comparator<? super T> c);
     // public Spliterator<T> spliterator();
     // public NumberArray<T> subList(int fromIndex, int toIndex)
-    // public void trimToSize()
+
 }
