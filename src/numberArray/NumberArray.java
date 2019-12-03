@@ -77,13 +77,17 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         --currentSize;
     }
 
-    public void remove(T number) {
-        while (true) {
-            int i = indexOf(number);
-            if (i == -1) {
-                break;
-            }
-            remove(i);
+    public boolean remove(T number) {
+        int i = indexOf(number);
+        if (i == -1) {
+            return false;
+        }
+        remove(i);
+        return true;
+    }
+
+    public void removeAll(T number) {
+        while (remove(number)) {
         }
     }
 
