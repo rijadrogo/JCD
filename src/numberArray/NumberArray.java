@@ -3,9 +3,10 @@ package numberArray;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Iterator;
 
 
-public class NumberArray<T extends Number> {
+public class NumberArray<T extends Number> implements Iterable<T> {
     private T[] arrayNumber;
     private int currentSize;
     private int currentCapacity;
@@ -139,8 +140,25 @@ public class NumberArray<T extends Number> {
         return currentSize;
     }
 
-    private class Iterator {
+    @Override
+    public Iterator<T> iterator() {
+        return new Iter();
+    }
 
+    private class Iter implements Iterator<T> {
+        private int current = 0;
+
+        @Override
+        public boolean hasNext() {
+            return current < currentSize;
+        }
+
+        @Override
+        public T next() {
+            T temp = arrayNumber[current];
+            ++current;
+            return temp;
+        }
     }
 
 }

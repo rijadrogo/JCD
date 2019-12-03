@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71f38a8b-4000-46b2-aadf-366692009cc6" name="Default Changelist" comment="">
+    <list default="true" id="71f38a8b-4000-46b2-aadf-366692009cc6" name="Default Changelist" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/numberArray/NumberArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/numberArray/NumberArray.java" afterDir="false" />
     </list>
@@ -151,13 +151,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573580660831</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Commit">
-      <created>1573582221592</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1573582221592</updated>
     </task>
     <task id="LOCAL-00007" summary="Commit">
       <created>1573582274351</created>
@@ -495,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575400051756</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Commit">
+      <created>1575400672348</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1575400672348</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -508,14 +508,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573899488158" />
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1575401479225">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1575401479225" />
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575392238051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575392238051" />
-    <state x="612" y="27" key="CommitChangelistDialog2" timestamp="1575400050506">
+    <state x="612" y="27" key="CommitChangelistDialog2" timestamp="1575401541875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="612" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1575400050506" />
+    <state x="612" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1575401541875" />
     <state x="840" y="414" width="264" height="212" key="Github.ShareDialog" timestamp="1573581099052">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -544,10 +548,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="786" y="146" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1573581014586" />
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1575400054476">
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1575400675244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575400054476" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575400675244" />
     <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575392524118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
