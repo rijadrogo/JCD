@@ -19,6 +19,8 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         }
     }
 
+    public NumberArray() {
+    }
 
     public boolean add(T number) {
         // ako nemam dovoljan broj elemenata povecaj duzinu
