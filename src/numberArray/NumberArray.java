@@ -13,7 +13,7 @@ public class NumberArray<T extends Number> {
 
     private void resizeIfNecessary() {
         if (currentSize == currentCapacity) {
-            currentCapacity = (int) (currentSize * growthFactor);
+            currentCapacity = (int) (currentSize * growthFactor + 0.5F);
             arrayNumber = Arrays.copyOf(arrayNumber, currentCapacity);
         }
     }
