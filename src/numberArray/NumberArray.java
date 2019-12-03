@@ -21,10 +21,6 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     public NumberArray() {
     }
 
-    public NumberArray(int newLength) {
-
-    }
-
     public boolean add(T number) {
         add(currentSize, number);
         return true;
@@ -178,6 +174,9 @@ public class NumberArray<T extends Number> implements Iterable<T> {
             return temp;
         }
     }
+
+    // public NumberArray(int newLength) {}
+    // public ArrayList(Collection<? extends E> c)
 
     // public void clear();
     // public void ensureCapacity(int requiredCapacity);
