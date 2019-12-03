@@ -1,6 +1,7 @@
 package numberArray;
 
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
@@ -10,16 +11,20 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     private T[] arrayNumber;
     private int currentSize;
     private int currentCapacity;
-    private final float growthFactor = 1.5F;
 
     private void resizeIfNecessary() {
         if (currentSize == currentCapacity) {
+            float growthFactor = 1.5F;
             currentCapacity = (int) (currentSize * growthFactor + 0.5F);
             arrayNumber = Arrays.copyOf(arrayNumber, currentCapacity);
         }
     }
 
     public NumberArray() {
+    }
+
+    public NumberArray(int newLength) {
+
     }
 
     public boolean add(T number) {
