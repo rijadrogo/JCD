@@ -1,9 +1,12 @@
 package numberArray;
 
-import java.lang.reflect.Array;
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.function.Predicate;
+import java.util.function.UnaryOperator;
 
 public class NumberArray<T extends Number> implements Iterable<T> {
 
@@ -51,6 +54,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         ++currentSize;
     }
 
+    // BUG what to do when arrayNumber is emmpty and index != 0
     public boolean addAll(int index, Collection<? extends T> c) {
         if (currentSize == 0) {
             resize(c.size());
@@ -177,6 +181,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return currentSize;
     }
 
+    @NotNull
     @Override
     public Iterator<T> iterator() {
         return new Iter();
@@ -212,7 +217,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public Object[] toArray() {
-        return (Object[]) arrayNumber;
+        return arrayNumber;
     }
 
     public NumberArray(Collection<? extends T> c) {
@@ -227,11 +232,32 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return newNA;
     }
 
-    // public void clear();
+    public void clear() {
+        arrayNumber = null;
+        currentCapacity = currentSize = 0;
+    }
+
+    public boolean removeIf(Predicate<? super T> filter) {
+        boolean flag = false;
+        for (int i = 0; i < currentSize; ++i) {
+            if (filter.test(arrayNumber[i])) {
+                remove(i);
+                flag = true;
+            }
+        }
+        return flag;
+
+    }
+
+    public void replaceAll(UnaryOperator<T> operator) {
+        for (int i = 0; i < currentSize; ++i) {
+            arrayNumber[i] = operator.apply(arrayNumber[i]);
+        }
+    }
+
+    // TODO implement
     // public <T> T[] toArray(T[] a)
     // public Object clone();
-    // public boolean removeIf(Predicate<? super T> filter);
-    // public void replaceAll(UnaryOperator<T> operator);
     // public void sort(Comparator<? super T> c);
     // public Spliterator<T> spliterator();
 }
