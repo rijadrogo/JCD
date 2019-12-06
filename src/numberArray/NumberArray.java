@@ -39,6 +39,10 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         currentSize = capacity;
     }
 
+    public NumberArray(Collection<? extends T> c) {
+        this.addAll(c);
+    }
+
     public boolean add(T number) {
         add(currentSize, number);
         return true;
@@ -108,7 +112,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public boolean remove(T number) {
-        // nalazim poziciju elementa numer
+        // nalazim poziciju elementa number
         int i = this.indexOf(number);
         // ako ga nema vrati false
         if (i == -1) {
@@ -120,7 +124,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public void removeAll(T number) {
-        // metoda remova izbacuje prvo pojavljivanje elmenta number i vrati true ako ga je uzbacila
+        // metoda remove izbacuje prvo pojavljivanje elmenta number i vrati true ako ga je uzbacila
         // a ako ne postoji u nizu vraca false
         while (this.remove(number)) {
         }
@@ -214,10 +218,6 @@ public class NumberArray<T extends Number> implements Iterable<T> {
 
     public Object[] toArray() {
         return arrayNumber;
-    }
-
-    public NumberArray(Collection<? extends T> c) {
-        this.addAll(c);
     }
 
     public NumberArray<T> subList(int fromIndex, int toIndex) {
