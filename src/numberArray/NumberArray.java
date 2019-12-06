@@ -1,25 +1,37 @@
 package numberArray;
 
-import java.sql.Array;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 
-
 public class NumberArray<T extends Number> implements Iterable<T> {
+
     private T[] arrayNumber;
     private int currentSize;
     private int currentCapacity;
 
-    private void resizeIfNecessary() {
-        if (currentSize == currentCapacity) {
+    private void resize(int size) {
+        if (size < currentCapacity)
+            return;
+
+        if (arrayNumber == null) {
+            arrayNumber = (T[]) new Number[currentCapacity];
+            currentCapacity = size;
+        } else {
             float growthFactor = 1.5F;
             currentCapacity = (int) (currentSize * growthFactor + 0.5F);
             arrayNumber = Arrays.copyOf(arrayNumber, currentCapacity);
         }
+
     }
 
     public NumberArray() {
+    }
+
+    public NumberArray(int capacity) {
+        resize(capacity);
+        currentSize = capacity;
     }
 
     public boolean add(T number) {
@@ -29,7 +41,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
 
     public void add(int index, T number) {
         // ako nemam dovoljan broj elemenata povecaj duzinu
-        resizeIfNecessary();
+        resize(currentSize + 1);
         // pomjeram sve elemente udesno da bi napravio mjesto za element
         for (int i = currentSize; i > index; --i) {
             arrayNumber[i] = arrayNumber[i - 1];
@@ -40,8 +52,18 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public boolean addAll(int index, Collection<? extends T> c) {
-        // ako nemam dovoljno prostora alociraj
-        if (currentSize + c.size() > currentCapacity) {
+        if (currentSize == 0) {
+            resize(c.size());
+            currentSize = currentCapacity;
+            Iterator<? extends T> iter = c.iterator();
+            int i = 0;
+            for (T e : c) {
+                arrayNumber[i++] = e;
+            }
+            return true;
+
+        } // ako nemam dovoljno prostora alociraj
+        else if (currentSize + c.size() > currentCapacity) {
             currentCapacity = currentSize + c.size();
             arrayNumber = Arrays.copyOf(arrayNumber, currentCapacity);
         }
@@ -161,8 +183,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public void ensureCapacity(int requiredCapacity) {
-        arrayNumber = Arrays.copyOf(arrayNumber, requiredCapacity);
-        currentCapacity = requiredCapacity;
+        resize(requiredCapacity);
         if (requiredCapacity < currentSize) {
             currentSize = currentCapacity;
         }
@@ -174,6 +195,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     private class Iter implements Iterator<T> {
+
         private int current = 0;
 
         @Override
@@ -189,18 +211,28 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         }
     }
 
-    // public NumberArray(int newLength) {}
-    // public ArrayList(Collection<? extends E> c)
+    public Object[] toArray() {
+        return (Object[]) arrayNumber;
+    }
+
+    public NumberArray(Collection<? extends T> c) {
+        addAll(c);
+    }
+
+    public NumberArray<T> subList(int fromIndex, int toIndex) {
+        NumberArray<T> newNA = new NumberArray<>(toIndex - fromIndex);
+        for (int i = 0; i < newNA.size(); ++i) {
+            newNA.set(i, get(toIndex++));
+        }
+        return newNA;
+    }
 
     // public void clear();
-    // public void ensureCapacity(int requiredCapacity);
-    // public Object[] toArray()
     // public <T> T[] toArray(T[] a)
     // public Object clone();
     // public boolean removeIf(Predicate<? super T> filter);
     // public void replaceAll(UnaryOperator<T> operator);
     // public void sort(Comparator<? super T> c);
     // public Spliterator<T> spliterator();
-    // public NumberArray<T> subList(int fromIndex, int toIndex)
-
 }
+
