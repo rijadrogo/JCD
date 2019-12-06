@@ -35,7 +35,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public NumberArray(int capacity) {
-        resize(capacity);
+        this.resize(capacity);
         currentSize = capacity;
     }
 
@@ -44,13 +44,13 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public boolean add(T number) {
-        add(currentSize, number);
+        this.add(currentSize, number);
         return true;
     }
 
     public void add(int index, T number) {
         // ako nemam dovoljan broj elemenata povecaj duzinu
-        resize(currentSize + 1);
+        this.resize(currentSize + 1);
         // pomjeram sve elemente udesno da bi napravio mjesto za element
         for (int i = currentSize; i > index; --i) {
             arrayNumber[i] = arrayNumber[i - 1];
@@ -64,9 +64,8 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     // BUG implement simpler
     public boolean addAll(int index, Collection<? extends T> c) {
         if (currentSize == 0) {
-            resize(c.size());
+            this.resize(c.size());
             currentSize = currentCapacity;
-            Iterator<? extends T> iter = c.iterator();
             int i = 0;
             for (T e : c) {
                 arrayNumber[i++] = e;
