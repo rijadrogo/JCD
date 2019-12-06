@@ -24,8 +24,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
             currentCapacity = size;
         } else {
             // vec imamo neke elemente u nizu treba realocirat i kopirati stare elemente
-            float growthFactor = 1.5F;
-            currentCapacity = (int) (currentSize * growthFactor + 0.5F);
+            currentCapacity = size;
             arrayNumber = Arrays.copyOf(arrayNumber, currentCapacity);
         }
 
@@ -50,7 +49,8 @@ public class NumberArray<T extends Number> implements Iterable<T> {
 
     public void add(int index, T number) {
         // ako nemam dovoljan broj elemenata povecaj duzinu
-        this.resize(currentSize + 1);
+        // duzinu povecam za 1.5 cisto nako
+        this.resize((int) (currentSize * 1.5F + 0.5));
         // pomjeram sve elemente udesno da bi napravio mjesto za element
         for (int i = currentSize; i > index; --i) {
             arrayNumber[i] = arrayNumber[i - 1];
