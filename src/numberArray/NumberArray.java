@@ -109,7 +109,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
 
     public boolean remove(T number) {
         // nalazim poziciju elementa numer
-        int i = indexOf(number);
+        int i = this.indexOf(number);
         // ako ga nema vrati false
         if (i == -1) {
             return false;
@@ -154,7 +154,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public boolean contains(T number) {
-        return indexOf(number) != -1;
+        return this.indexOf(number) != -1;
     }
 
 
@@ -201,7 +201,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public void ensureCapacity(int requiredCapacity) {
-        resize(requiredCapacity);
+        this.resize(requiredCapacity);
         if (requiredCapacity < currentSize) {
             currentSize = currentCapacity;
         }
@@ -217,7 +217,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public NumberArray(Collection<? extends T> c) {
-        addAll(c);
+        this.addAll(c);
     }
 
     public NumberArray<T> subList(int fromIndex, int toIndex) {
