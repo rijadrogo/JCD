@@ -54,7 +54,8 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         ++currentSize;
     }
 
-    // BUG what to do when arrayNumber is emmpty and index != 0
+    // NOTE what to do when arrayNumber is emmpty and index != 0
+    // BUG implement simpler
     public boolean addAll(int index, Collection<? extends T> c) {
         if (currentSize == 0) {
             resize(c.size());
@@ -181,12 +182,6 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return currentSize;
     }
 
-    @NotNull
-    @Override
-    public Iterator<T> iterator() {
-        return new Iter();
-    }
-
     public void ensureCapacity(int requiredCapacity) {
         resize(requiredCapacity);
         if (requiredCapacity < currentSize) {
@@ -197,23 +192,6 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     public void trimToSize() {
         arrayNumber = Arrays.copyOf(arrayNumber, currentSize);
         currentCapacity = currentSize;
-    }
-
-    private class Iter implements Iterator<T> {
-
-        private int current = 0;
-
-        @Override
-        public boolean hasNext() {
-            return current < currentSize;
-        }
-
-        @Override
-        public T next() {
-            T temp = arrayNumber[current];
-            ++current;
-            return temp;
-        }
     }
 
     public Object[] toArray() {
@@ -253,6 +231,29 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         for (int i = 0; i < currentSize; ++i) {
             arrayNumber[i] = operator.apply(arrayNumber[i]);
         }
+    }
+
+    private class Iter implements Iterator<T> {
+
+        private int current = 0;
+
+        @Override
+        public boolean hasNext() {
+            return current < currentSize;
+        }
+
+        @Override
+        public T next() {
+            T temp = arrayNumber[current];
+            ++current;
+            return temp;
+        }
+    }
+
+    @NotNull
+    @Override
+    public Iterator<T> iterator() {
+        return new Iter();
     }
 
     // TODO implement
