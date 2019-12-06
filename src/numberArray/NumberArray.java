@@ -15,13 +15,15 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     private int currentCapacity;
 
     private void resize(int size) {
+        // imamo dovoljno alociranog prostora
         if (size < currentCapacity)
             return;
-
+        // prva alokacija
         if (arrayNumber == null) {
             arrayNumber = (T[]) new Number[currentCapacity];
             currentCapacity = size;
         } else {
+            // vec imamo neke elemente u nizu treba realocirat i kopirati stare elemente
             float growthFactor = 1.5F;
             currentCapacity = (int) (currentSize * growthFactor + 0.5F);
             arrayNumber = Arrays.copyOf(arrayNumber, currentCapacity);
@@ -90,29 +92,37 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     boolean addAll(Collection<? extends T> c) {
-        return addAll(currentSize, c);
+        return this.addAll(currentSize, c);
     }
 
     public T remove(int index) {
+        // spasavamo element koji vracamo
         T temp = arrayNumber[index];
+        // prepisujemo elemente preko njega
         for (int i = index + 1; i < currentSize; ++i) {
             arrayNumber[i - 1] = arrayNumber[i];
         }
+        // azuriramo velicinu
         --currentSize;
         return temp;
     }
 
     public boolean remove(T number) {
+        // nalazim poziciju elementa numer
         int i = indexOf(number);
+        // ako ga nema vrati false
         if (i == -1) {
             return false;
         }
-        remove(i);
+        // u suprotnom izbaci i vrati true
+        this.remove(i);
         return true;
     }
 
     public void removeAll(T number) {
-        while (remove(number)) {
+        // metoda remova izbacuje prvo pojavljivanje elmenta number i vrati true ako ga je uzbacila
+        // a ako ne postoji u nizu vraca false
+        while (this.remove(number)) {
         }
     }
 
@@ -133,11 +143,13 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public int lastIndexOf(T number) {
+        // idemo sa kraja niza i trazimo element number, zatim vracamo njegov index
         for (int i = currentSize - 1; i >= 0; --i) {
             if (arrayNumber[i].equals(number)) {
                 return i;
             }
         }
+        // ako ne postoji vracamo -1
         return -1;
     }
 
@@ -145,11 +157,14 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return indexOf(number) != -1;
     }
 
+
     public boolean retainAll(Collection<? extends T> c) {
         boolean flag = false;
+        // prolazim kroz niz
         for (int i = 0; i < currentSize; ++i) {
+            // ako elmenent unutar niza ne postoji u kolekciji c izbaci ga
             if (!c.contains(arrayNumber[i])) {
-                remove(i);
+                this.remove(i);
                 flag = true;
             }
         }
@@ -157,11 +172,13 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public int indexOf(T number) {
+        // prolazim kroz niz i trazim element number i vracam njegov indeks
         for (int i = 0; i < currentSize; ++i) {
             if (arrayNumber[i].equals(number)) {
                 return i;
             }
         }
+        // ako ne postoji vracam -1
         return -1;
     }
 
@@ -172,8 +189,9 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public boolean removeAll(Collection<? extends T> c) {
+        // izbacujem sve elmente koje se nalaze u kolekciji iz niza
         for (T t : c) {
-            remove(t);
+            this.remove(t);
         }
         return true;
     }
@@ -203,9 +221,10 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public NumberArray<T> subList(int fromIndex, int toIndex) {
+        // vram podniz koji se sastoji od elemenata na pozicji fromIndex do toIndex
         NumberArray<T> newNA = new NumberArray<>(toIndex - fromIndex);
         for (int i = 0; i < newNA.size(); ++i) {
-            newNA.set(i, get(toIndex++));
+            newNA.set(i, arrayNumber[toIndex++]);
         }
         return newNA;
     }
@@ -217,9 +236,11 @@ public class NumberArray<T extends Number> implements Iterable<T> {
 
     public boolean removeIf(Predicate<? super T> filter) {
         boolean flag = false;
+        // prolazim kroz kolekciju
         for (int i = 0; i < currentSize; ++i) {
+            // izbacujem elmente koji zadovoljavaju uslov
             if (filter.test(arrayNumber[i])) {
-                remove(i);
+                this.remove(i);
                 flag = true;
             }
         }
