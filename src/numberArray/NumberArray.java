@@ -15,12 +15,12 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     private int currentCapacity;
 
     private void resize(int size) {
-        // imamo dovoljno alociranog prostora
         if (size < currentCapacity)
             return;
+
         // prva alokacija
         if (arrayNumber == null) {
-            arrayNumber = (T[]) new Number[currentCapacity];
+            arrayNumber = (T[]) new Number[size];
             currentCapacity = size;
         } else {
             // vec imamo neke elemente u nizu treba realocirat i kopirati stare elemente
@@ -35,7 +35,6 @@ public class NumberArray<T extends Number> implements Iterable<T> {
 
     public NumberArray(int capacity) {
         this.resize(capacity);
-        currentSize = capacity;
     }
 
     public NumberArray(Collection<? extends T> c) {
@@ -50,7 +49,8 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     public void add(int index, T number) {
         // ako nemam dovoljan broj elemenata povecaj duzinu
         // duzinu povecam za 1.5 cisto nako
-        this.resize((int) (currentSize * 1.5F + 0.5));
+        if (currentSize == currentCapacity)
+            this.resize((int) ((1 + currentSize) * 1.5F + 0.5));
         // pomjeram sve elemente udesno da bi napravio mjesto za element
         for (int i = currentSize; i > index; --i) {
             arrayNumber[i] = arrayNumber[i - 1];
