@@ -34,7 +34,8 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public NumberArray(int capacity) {
-        this.resize(capacity);
+        arrayNumber = (T[]) new Number[capacity];
+        currentCapacity = capacity;
     }
 
     public NumberArray(Collection<? extends T> c) {
