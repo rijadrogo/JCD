@@ -220,7 +220,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public NumberArray<T> subList(int fromIndex, int toIndex) {
-        // vram podniz koji se sastoji od elemenata na pozicji fromIndex do toIndex
+        // vracam podniz koji se sastoji od elemenata na pozicji fromIndex do toIndex
         NumberArray<T> newNA = new NumberArray<>(toIndex - fromIndex);
         for (int i = 0; i < newNA.size(); ++i) {
             newNA.set(i, arrayNumber[toIndex++]);
