@@ -191,7 +191,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         }
     }
 
-    public boolean removeAll(Collection<? extends T> c) {
+    public boolean removeAll(@NotNull Collection<? extends T> c) {
         // izbacujem sve elmente koje se nalaze u kolekciji iz niza
         for (T t : c) {
             this.remove(t);
@@ -244,7 +244,6 @@ public class NumberArray<T extends Number> implements Iterable<T> {
             }
         }
         return flag;
-
     }
 
     public void replaceAll(UnaryOperator<T> operator) {
