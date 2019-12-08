@@ -12,20 +12,18 @@ public class NumberArray<T extends Number> implements Iterable<T> {
 
     private T[] arrayNumber;
     private int currentSize;
-    private int currentCapacity;
 
     private void resize(int size) {
-        if (size < currentCapacity)
+        if (size < this.size())
             return;
 
         // prva alokacija
         if (arrayNumber == null) {
             arrayNumber = (T[]) new Number[size];
-            currentCapacity = size;
+
         } else {
             // vec imamo neke elemente u nizu treba realocirat i kopirati stare elemente
-            currentCapacity = size;
-            arrayNumber = Arrays.copyOf(arrayNumber, currentCapacity);
+            arrayNumber = Arrays.copyOf(arrayNumber, size);
         }
 
     }
@@ -35,7 +33,6 @@ public class NumberArray<T extends Number> implements Iterable<T> {
 
     public NumberArray(int capacity) {
         arrayNumber = (T[]) new Number[capacity];
-        currentCapacity = capacity;
     }
 
     public NumberArray(Collection<? extends T> c) {
@@ -50,7 +47,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     public void add(int index, T number) {
         // ako nemam dovoljan broj elemenata povecaj duzinu
         // duzinu povecam za 1.5 cisto nako
-        if (currentSize == currentCapacity)
+        if (currentSize == this.size())
             this.resize((int) ((1 + currentSize) * 1.5F + 0.5));
         // pomjeram sve elemente udesno da bi napravio mjesto za element
         for (int i = currentSize; i > index; --i) {
@@ -66,7 +63,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     public boolean addAll(int index, Collection<? extends T> c) {
         if (currentSize == 0) {
             this.resize(c.size());
-            currentSize = currentCapacity;
+            currentSize = this.size();
             int i = 0;
             for (T e : c) {
                 arrayNumber[i++] = e;
@@ -74,9 +71,8 @@ public class NumberArray<T extends Number> implements Iterable<T> {
             return true;
 
         } // ako nemam dovoljno prostora alociraj
-        else if (currentSize + c.size() > currentCapacity) {
-            currentCapacity = currentSize + c.size();
-            arrayNumber = Arrays.copyOf(arrayNumber, currentCapacity);
+        else if (currentSize + c.size() > this.size()) {
+            arrayNumber = Arrays.copyOf(arrayNumber, currentSize + c.size());
         }
 
         // pomjeri udesno koliko je potrebno
@@ -207,13 +203,12 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     public void ensureCapacity(int requiredCapacity) {
         this.resize(requiredCapacity);
         if (requiredCapacity < currentSize) {
-            currentSize = currentCapacity;
+            currentSize = this.size();
         }
     }
 
     public void trimToSize() {
         arrayNumber = Arrays.copyOf(arrayNumber, currentSize);
-        currentCapacity = currentSize;
     }
 
     public Object[] toArray() {
@@ -231,7 +226,6 @@ public class NumberArray<T extends Number> implements Iterable<T> {
 
     public void clear() {
         arrayNumber = null;
-        currentCapacity = currentSize = 0;
     }
 
     public boolean removeIf(Predicate<? super T> filter) {
