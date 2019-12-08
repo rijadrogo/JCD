@@ -5,7 +5,7 @@ public class Master implements ICard {
 
     @Override
     public void getMoney(double amount) {
-
+        this.amount -= amount;
     }
 
     @Override

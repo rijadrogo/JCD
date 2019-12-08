@@ -5,7 +5,7 @@ public class Visa implements ICard {
 
     @Override
     public void getMoney(double amount) {
-
+        this.amount -= amount;
     }
 
     @Override
