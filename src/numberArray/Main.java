@@ -8,6 +8,7 @@ public class Main {
         // System.out.println(a.size());
         a.add(-1);
         a.add(-1);
+        a.toArray();
 
         NumberArray<Integer> arr = new NumberArray<>(2);
         arr.add(5);

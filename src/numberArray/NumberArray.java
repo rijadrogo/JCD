@@ -4,6 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
@@ -32,7 +33,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
     }
 
     public NumberArray(int capacity) {
-        arrayNumber = (T[]) new Number[capacity];
+        arrayNumber = (T[]) new Number[capacity];// Unckhecked cast
     }
 
     public NumberArray(Collection<? extends T> c) {
@@ -48,7 +49,7 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         // ako nemam dovoljan broj elemenata povecaj duzinu
         // duzinu povecam za 1.5 cisto nako
         if (currentSize == this.size())
-            this.resize((int) ((1 + currentSize) * 1.5F + 0.5));
+            this.resize((int) ((1 + currentSize) * 1.5F));
         // pomjeram sve elemente udesno da bi napravio mjesto za element
         for (int i = currentSize; i > index; --i) {
             arrayNumber[i] = arrayNumber[i - 1];
@@ -211,10 +212,6 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         arrayNumber = Arrays.copyOf(arrayNumber, currentSize);
     }
 
-    public Object[] toArray() {
-        return arrayNumber;
-    }
-
     public NumberArray<T> subList(int fromIndex, int toIndex) {
         // vracam podniz koji se sastoji od elemenata na pozicji fromIndex do toIndex
         NumberArray<T> newNA = new NumberArray<>(toIndex - fromIndex);
@@ -270,10 +267,29 @@ public class NumberArray<T extends Number> implements Iterable<T> {
         return new Iter();
     }
 
+    public void sort(Comparator<? super T> c) {
+        Arrays.sort(arrayNumber, c);
+    }
+
+    public Object[] toArray() {
+        return Arrays.copyOf(arrayNumber, this.currentSize);
+    }
+
+
+    // Bug?? is this ok?
+    public <U extends Number> U[] toArray(U[] array) {
+        if (array.length < currentSize) {
+            return (U[]) Arrays.copyOf(arrayNumber, this.currentSize, array.getClass());
+        }
+        System.arraycopy(arrayNumber, 0, array, 0, this.currentSize);
+        if (array.length > this.currentSize) {
+            array[this.currentSize] = null;
+        }
+        return array;
+    }
+
     // TODO implement
-    // public <T> T[] toArray(T[] a)
     // public Object clone();
-    // public void sort(Comparator<? super T> c);
     // public Spliterator<T> spliterator();
 }
 
